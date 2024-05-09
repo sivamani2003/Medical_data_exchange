@@ -8,7 +8,7 @@ import Buy from "./components/BuyMarket.jsx";
 import Sell from "./components/SellMarket.jsx";
 import { MetaMaskUIProvider } from "@metamask/sdk-react-ui";
 import { TransactionProvider } from "./context/TransactionContext.jsx";
-
+import Footer from "./components/Footer.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +17,7 @@ const router = createBrowserRouter([
         <div className="min-h-screen">
           <Topbar />
           <App />
+          <Footer></Footer>
         </div>
       </>
     ),
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
         <div className="min-h-screen">
           <Topbar />
           <Buy />
+
         </div>
       </>
     ),
@@ -39,6 +41,7 @@ const router = createBrowserRouter([
         <div className="min-h-screen">
           <Topbar />
           <Sell />
+
         </div>
       </>
     ),
